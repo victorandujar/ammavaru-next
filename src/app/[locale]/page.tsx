@@ -1,9 +1,11 @@
+import AboutSection from "../components/AboutSection/AboutSection";
 import HeroSection from "../components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex w-3/4">
+    <div className="flex w-3/4 flex-col gap-40">
       <HeroSection />
+      <AboutSection />
     </div>
   );
 }
