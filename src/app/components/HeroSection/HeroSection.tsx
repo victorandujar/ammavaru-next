@@ -85,7 +85,7 @@ const HeroSection = (): React.ReactElement => {
             alt="logo colors"
             height={200}
             width={200}
-            className="relative z-10 rounded-full object-contain"
+            className="relative z-1 rounded-full"
           />
         </div>
       </section>
