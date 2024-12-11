@@ -2,9 +2,12 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const HeroSection = (): React.ReactElement => {
-  const lines = useMemo(() => ["Hola,", "somos Ammavaru"], []);
+  const t = useTranslations("HeroSection");
+
+  const lines = useMemo(() => [t("welcome-first"), t("welcome-second")], [t]);
   const [showCursor, setShowCursor] = useState(true);
   const [position, setPosition] = useState(0);
   const [isWritingFirstLine, setIsWritingFirstLine] = useState(true);

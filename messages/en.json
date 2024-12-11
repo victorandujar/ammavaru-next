@@ -5,5 +5,9 @@
     "contact": "Contact",
     "resources": "Resources",
     "projects": "Projects"
+  },
+  "HeroSection": {
+    "welcome-first": "Hello,",
+    "welcome-second": "we are Ammavaru"
   }
 }
