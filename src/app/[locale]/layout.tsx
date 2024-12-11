@@ -9,11 +9,12 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
   weight: ["100", "400", "700", "900"],
 });
-export async function getMessages(locale: string) {
+
+async function getMessages(locale: string) {
   try {
     return (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
-    console.error(error);
+    error;
     notFound();
   }
 }
