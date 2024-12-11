@@ -1,9 +1,9 @@
 import "../globals.css";
-import Header from "../components/Header/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { Montserrat } from "next/font/google";
 import { getMessages } from "../helpers/getMessages";
+import { Layout } from "../components/Layout/Layout";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -26,8 +26,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${montserrat.className} antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          {children}
+          <Layout>{children}</Layout>
         </NextIntlClientProvider>
       </body>
     </html>

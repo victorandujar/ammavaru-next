@@ -9,6 +9,9 @@
   --tertiary-color: #ff8958;
   --background-color: #1b1b1b;
   --light: #fff;
+  --font-XXL: 3rem;
+  --font-XL: 2rem;
+  --font-L: 1.5rem;
   --font-M: 1rem;
   --font-ML: 1.25rem;
   --font-MS: 0.875rem;
@@ -67,21 +70,15 @@ a,
 }
 
 &::-webkit-scrollbar-track {
-  background: var(--main-color);
+  background: var(--background-color);
 }
 
 &::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: var(--background-color);
   border-radius: 10px;
   border: 3px solid var(--main-color);
 }
 
 &::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-color);
-}
-
-select:focus {
-  border: none; /* Elimina cualquier borde al abrir el menú */
-  outline: none; /* Asegura que no haya outline */
-  box-shadow: none; /* Elimina sombras */
 }
