@@ -9,10 +9,13 @@
   --tertiary-color: #ff8958;
   --background-color: #1b1b1b;
   --light: #fff;
-  --font-size-base: 1rem;
-  --font-size-large: 1.25rem;
-  --font-size-medium-small: 0.875rem;
-  --font-size-small: 0.7rem;
+  --font-M: 1rem;
+  --font-ML: 1.25rem;
+  --font-MS: 0.875rem;
+  --font-MSS: 0.8rem;
+  --font-S: 0.7rem;
+  --font-montserrat-regular: "Montserrat Regular", sans-serif;
+  --font-montserrat-bold: "Montserrat Bold", sans-serif;
 }
 
 *,
@@ -24,7 +27,7 @@
 body {
   background: var(--background-color);
   color: var(--light);
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat-regular);
   z-index: 0;
   margin: 0;
   min-height: 100vh;
@@ -75,4 +78,10 @@ a,
 
 &::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-color);
+}
+
+select:focus {
+  border: none; /* Elimina cualquier borde al abrir el menú */
+  outline: none; /* Asegura que no haya outline */
+  box-shadow: none; /* Elimina sombras */
 }

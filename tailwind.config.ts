@@ -1,16 +1,18 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx,css}"],
+
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "var(--background-color)",
         foreground: "var(--foreground)",
+      },
+      fontSize: {
+        s: "var(--font-S)",
+        ms: "var(--font-MS)",
+        mss: "var(--font-MSS)",
       },
     },
   },
