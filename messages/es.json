@@ -2,12 +2,16 @@
   "Header": {
     "method": "Metodología",
     "services": "Servicios",
-    "contact": "Contactos",
+    "contact": "Contacto",
     "resources": "Recursos",
     "projects": "Proyectos"
   },
   "HeroSection": {
     "welcome-first": "Hola,",
     "welcome-second": "somos Ammavaru"
+  },
+  "About": {
+    "we-are": "Empoderamos ideas con propósito, fusionando estrategia, diseño y tecnología para construir marcas que conectan con el alma y plataformas que transforman negocios.",
+    "we-do": "Trabajamos con marcas y negocios que buscan hacer del mundo un lugar mejor. Creamos estrategias y productos digitales que amplifican su impacto."
   }
 }

@@ -9,5 +9,9 @@
   "HeroSection": {
     "welcome-first": "Hello,",
     "welcome-second": "we are Ammavaru"
+  },
+  "About": {
+    "we-are": "We empower ideas with purpose, blending strategy, design, and technology to build brands that connect with the soul and platforms that transform businesses.",
+    "we-do": "We work with brands and businesses striving to make the world a better place. We create strategies and digital products that amplify their impact."
   }
 }
