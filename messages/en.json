@@ -1,0 +1,9 @@
+{
+  "Header": {
+    "method": "Methodoloy",
+    "services": "Services",
+    "contact": "Contact",
+    "resources": "Resources",
+    "projects": "Projects"
+  }
+}
