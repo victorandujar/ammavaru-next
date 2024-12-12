@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 const Header = (): React.ReactElement => {
   const t = useTranslations("Header");
   return (
-    <header className="flex items-center justify-between p-4">
+    <header className="sticky top-0 z-50 flex items-center justify-between p-4 bg-background shadow-md">
       <Image src="/logo.png" height={20} alt="logo" width={20} />
       <div className="flex gap-10">
         <ul className="flex gap-20">

@@ -23,13 +23,25 @@ export default {
         mss: "var(--font-MSS)",
       },
       animation: {
-        smoke: "smoke 10s infinite", // Animación para el humo
+        smoke: "smoke 10s infinite",
+        move: "move 6s infinite ease-in-out",
+        moveReverse: "move-reverse 6s infinite ease-in-out",
       },
       keyframes: {
         smoke: {
           "0%": { transform: "translate(-10%, -10%) scale(1)" },
           "50%": { transform: "translate(10%, 10%) scale(1.1)" },
           "100%": { transform: "translate(-10%, -10%) scale(1)" },
+        },
+        move: {
+          "0%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(20px, -15px) scale(1.1)" },
+          "100%": { transform: "translate(0, 0) scale(1)" },
+        },
+        moveReverse: {
+          "0%": { transform: "translate(0, 0) scale(1)" },
+          "50%": { transform: "translate(-20px, 15px) scale(0.9)" },
+          "100%": { transform: "translate(0, 0) scale(1)" },
         },
       },
       // boxShadow: {
