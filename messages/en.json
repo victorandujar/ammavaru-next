@@ -16,5 +16,42 @@
   },
   "Methodology": {
     "title": "Methodology"
+  },
+  "Services": {
+    "title": "Services",
+    "first-service": {
+      "title": "Full Stack Development and MVP for Startups",
+      "description": "We design and develop MVPs (Minimum Viable Products) focused on quickly launching to market with the essentials to validate ideas and scale.",
+      "first-detail": "Initial diagnosis to understand key needs.",
+      "second-detail": "Agile development of robust web platforms and apps.",
+      "third-detail": "Evolution of existing solutions (e.g., migrating from WordPress to custom platforms).",
+      "fourth-detail": "Technical maintenance and continuous improvement."
+    },
+    "second-service": {
+      "title": "Digital Transformation and Strategic Diagnosis",
+      "description": "We integrate innovation into companies with defined products, optimizing their digital presence and adding strategic value.",
+      "first-detail": "Digital diagnosis: identifying areas for improvement.",
+      "second-detail": "Rebranding and visual identity evolution.",
+      "third-detail": "Development of personalized e-commerce and online platforms.",
+      "fourth-detail": "Strategies to showcase product value in a competitive environment.",
+      "fifth-detail": "Technical support and maintenance."
+    },
+    "third-service": {
+      "title": "Brand Strategy and Identity Creation",
+      "description": "We design authentic brands that connect with their audiences, developing digital strategies that drive their purpose.",
+      "first-detail": "Creation of visual identity and communication strategy.",
+      "second-detail": "Content planning and funnel communication design.",
+      "third-detail": "E-commerce strategy for small businesses.",
+      "fourth-detail": "Design of attractive portfolios for artists and creatives."
+    },
+    "fourth-service": {
+      "title": "Creative and Methodological Consulting",
+      "description": "We offer strategic consulting to design and execute creative projects, combining agile methodologies with practical tools.",
+      "first-detail": "Creative workshops and knowledge capsules.",
+      "second-detail": "Guides to create projects and optimize internal processes.",
+      "third-detail": "Business Design and Service Design for small and medium-sized companies.",
+      "fourth-detail": "Custom service design according to your needs."
+    },
+    "button-text": "Tell me more"
   }
 }
