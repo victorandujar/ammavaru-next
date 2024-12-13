@@ -1,6 +1,7 @@
 import AboutSection from "../components/AboutSection/AboutSection";
 import HeroSection from "../components/HeroSection/HeroSection";
 import MethodologySection from "../components/MethodologySection/MethodologySection";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 
 const Home = (): React.ReactElement => {
@@ -10,6 +11,7 @@ const Home = (): React.ReactElement => {
       <AboutSection />
       <MethodologySection />
       <ServicesSection />
+      <ProjectsSection />
     </div>
   );
 };

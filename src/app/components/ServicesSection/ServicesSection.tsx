@@ -50,7 +50,11 @@ const ServicesSection = (): React.ReactElement => {
 
   return (
     <section className="relative flex flex-col gap-20">
-      <h5 className="font-bold text-mainColor">{t("title")}</h5>
+      <div className="relative pb-2 w-full">
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-mainColor/70 via-mainColor/40 to-mainColor/20"></div>
+        <h5 className="font-bold text-mainColor">{t("title")}</h5>
+      </div>
+
       <div className="relative">
         <ul
           ref={containerRef}
