@@ -10,7 +10,8 @@ const MethodologySection = (): React.ReactElement => {
 
   return (
     <section className="flex flex-col gap-24">
-      <div className="border-b w-full pb-2 border-mainColor">
+      <div className="relative pb-2 w-full">
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-mainColor/70 via-mainColor/40 to-mainColor/20"></div>
         <h5 className="font-bold text-mainColor">{t("title")}</h5>
       </div>
       <section className="flex w-full justify-center gap-40 pt-20">
