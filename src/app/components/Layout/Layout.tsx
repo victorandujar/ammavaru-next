@@ -1,16 +1,19 @@
+"use client";
+
+import { ScrollProvider } from "@/app/contexts/ScrollContext";
 import Header from "../Header/Header";
 
 interface LayoutProps {
   children: React.ReactNode | React.ReactNode[];
 }
 
-export async function Layout({
-  children,
-}: LayoutProps): Promise<React.ReactElement> {
+export function Layout({ children }: LayoutProps): React.ReactElement {
   return (
-    <div>
-      <Header />
-      <div className="flex justify-center pt-20 pb-10">{children}</div>
-    </div>
+    <ScrollProvider>
+      <div>
+        <Header />
+        <div className="flex justify-center pt-20 pb-10">{children}</div>
+      </div>
+    </ScrollProvider>
   );
 }

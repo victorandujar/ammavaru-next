@@ -41,10 +41,10 @@ export default function CustomSelect() {
   }, [params.locale]);
 
   return (
-    <div className="relative border-b border-white-500">
+    <div className="relative border-b border-mainColor">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 bg-background border-b border-red-500 p-1 text-s"
+        className="flex items-center gap-2 bg-background border-b p-1 text-s"
       >
         {isOpen ? <FaChevronUp /> : <FaChevronDown />}
         {selected}

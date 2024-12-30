@@ -6,11 +6,11 @@ export const headerSections: HeaderSection[] = [
     name: "method",
     link: "",
   },
-  {
-    id: 2,
-    name: "projects",
-    link: "",
-  },
+  // {
+  //   id: 2,
+  //   name: "projects",
+  //   link: "",
+  // },
   {
     id: 3,
     name: "services",
@@ -21,5 +21,5 @@ export const headerSections: HeaderSection[] = [
     name: "contact",
     link: "",
   },
-  { id: 5, name: "resources", link: "/resources" },
+  // { id: 5, name: "resources", link: "/resources" },
 ];

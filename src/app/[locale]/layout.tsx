@@ -11,6 +11,11 @@ const montserrat = Montserrat({
   weight: ["100", "400", "700", "900"],
 });
 
+export const metadata = {
+  title: "Ammavaru",
+  description: "Brand strategist & web development",
+};
+
 export default async function RootLayout({
   children,
   params,

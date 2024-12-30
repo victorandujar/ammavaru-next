@@ -26,7 +26,7 @@ const AboutSection = (): React.ReactElement => {
             : "translate-y-20 opacity-0"
         }`}
       >
-        <span className="text-l font-thin">{t("we-are")}</span>
+        <span className="text-l font-regular">{t("we-are")}</span>
       </div>
 
       <div
@@ -34,7 +34,7 @@ const AboutSection = (): React.ReactElement => {
           showSecondText ? "opacity-100" : "opacity-0"
         }`}
       >
-        <span className="text-s font-bold">{t("we-do")}</span>
+        <span className="text-sm font-light tracking-wider">{t("we-do")}</span>
       </div>
     </section>
   );
