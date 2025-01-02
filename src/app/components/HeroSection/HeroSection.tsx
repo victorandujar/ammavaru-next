@@ -82,7 +82,7 @@ const HeroSection = (): React.ReactElement => {
       </div>
       <section className="flex items-center justify-center ">
         <div className="relative w-[200px] h-[200px] flex items-center justify-center">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-mainColor via-primary via-secondary to-tertiary opacity-60 blur-2xl animate-smoke"></div>
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-mainColor via-primary to-tertiary opacity-60 blur-2xl animate-smoke"></div>
           <Image
             src={"/logo-colors.png"}
             alt="logo colors"

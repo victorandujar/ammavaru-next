@@ -81,7 +81,7 @@ const FluidMesh: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-80 overflow-hidden mobile:w-full mobile:overflow-hidden mobile:h-48 ">
+    <div className="relative w-screen h-80 overflow-hidden mobile:w-full mobile:overflow-hidden mobile:h-full rounded-full">
       <canvas ref={canvasRef} className="absolute top-0 left-0 w-fit" />
     </div>
   );
