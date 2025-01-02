@@ -1,0 +1,60 @@
+{
+  "Header": {
+    "method": "Metodología",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "resources": "Recursos",
+    "projects": "Proyectos"
+  },
+  "HeroSection": {
+    "welcome-first": "Hola,",
+    "welcome-second": "somos Ammavaroo"
+  },
+  "About": {
+    "we-are": "Empoderamos ideas con propósito, fusionando estrategia, diseño y tecnología para construir marcas que conectan con el alma y plataformas que transforman negocios.",
+    "we-do": "Trabajamos con marcas y negocios que buscan hacer del mundo un lugar mejor. Creamos estrategias y productos digitales que amplifican su impacto."
+  },
+  "Methodology": {
+    "title": "Metodología"
+  },
+
+  "Services": {
+    "title": "Servicios",
+    "first-service": {
+      "title": "Desarrollo Full Stack y MVP para Startups",
+      "description": "Diseñamos y desarrollamos MVPs (Productos Mínimos Viables) enfocados en lanzar al mercado rápidamente con lo esencial para validar ideas y escalar.",
+      "first-detail": "Diagnóstico inicial para comprender las necesidades clave.",
+      "second-detail": "Desarrollo ágil de plataformas web y apps robustas.",
+      "third-detail": "Evolución de soluciones existentes (por ejemplo, migración de WordPress a plataformas personalizadas).",
+      "fourth-detail": "Mantenimiento técnico y mejora continua."
+    },
+    "second-service": {
+      "title": "Transformación Digital y Diagnóstico Estratégico",
+      "description": "Integramos innovación en empresas con productos definidos, optimizando su presencia digital y añadiendo valor estratégico.",
+      "first-detail": "Diagnóstico digital: identificación de oportunidades de mejora.",
+      "second-detail": "Rebranding y evolución de identidad visual.",
+      "third-detail": "Desarrollo de e-commerce y plataformas online personalizadas.",
+      "fourth-detail": "Estrategias para mostrar el valor del producto en un entorno competitivo."
+    },
+    "third-service": {
+      "title": "Estrategia de Marca y Creación de Identidad",
+      "description": "Diseñamos marcas auténticas que conectan con sus audiencias, desarrollando estrategias digitales que impulsan su propósito.",
+      "first-detail": "Creación de identidad visual y estrategia de comunicación.",
+      "second-detail": "Planeación de contenido y diseño de funnels de comunicación.",
+      "third-detail": "Estrategia de e-commerce para pequeños negocios.",
+      "fourth-detail": "Diseño de portafolios atractivos para artistas y creativos."
+    },
+    "fourth-service": {
+      "title": "Consultoría Creativa y Metodológica",
+      "description": "Ofrecemos consultoría estratégica para diseñar y ejecutar proyectos creativos, combinando metodologías ágiles con herramientas prácticas.",
+      "first-detail": "Workshops creativos y cápsulas de conocimiento.",
+      "second-detail": "Guías para crear proyectos y optimizar procesos internos.",
+      "third-detail": "Business Design y Service Design para empresas pequeñas y medianas.",
+      "fourth-detail": "Diseño de servicios personalizados según tus necesidades."
+    },
+    "button-text": "Quiero saber más"
+  },
+  "Projects": {
+    "title": "Proyectos"
+  }
+}
