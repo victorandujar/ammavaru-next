@@ -18,23 +18,23 @@ const AboutSection = (): React.ReactElement => {
   }, []);
 
   return (
-    <section className="flex justify-between">
+    <section className="flex justify-between mobile:flex-col mobile:gap-10 mobile:text-center mobile:px-5">
       <div
         className={`w-2/5 transition-all duration-1000 ease-out transform ${
           showFirstText
             ? "translate-y-0 opacity-100"
             : "translate-y-20 opacity-0"
-        }`}
+        } mobile:w-full`}
       >
-        <span className="text-l font-thin">{t("we-are")}</span>
+        <span className="text-l font-regular ">{t("we-are")}</span>
       </div>
 
       <div
         className={`w-2/5 transition-opacity duration-1000 ease-in ${
           showSecondText ? "opacity-100" : "opacity-0"
-        }`}
+        }  mobile:w-full`}
       >
-        <span className="text-s font-bold">{t("we-do")}</span>
+        <span className="text-sm font-light tracking-wider ">{t("we-do")}</span>
       </div>
     </section>
   );
