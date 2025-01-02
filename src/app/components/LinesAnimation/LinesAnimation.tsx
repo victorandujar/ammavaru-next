@@ -77,7 +77,7 @@ const LinesAnimation: React.FC<DNAAnimationProps> = ({
   }, [width, height, strandHeight, strandSpeed]);
 
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center mobile:w-fit">
       <canvas
         ref={canvasRef}
         width={width}

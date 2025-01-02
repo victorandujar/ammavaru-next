@@ -4,32 +4,28 @@ import { useRef, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { serviceSections } from "./utils/serviceSections";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { FaCircle } from "react-icons/fa";
 
 const ServicesSection = (): React.ReactElement => {
   const t = useTranslations("Services");
   const containerRef = useRef<HTMLUListElement>(null);
+  const cardRefs = useRef<(HTMLLIElement | null)[]>([]);
 
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [currentCard, setCurrentCard] = useState<number>(0);
+  const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
+  const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
 
-  const handleScrollRight = () => {
+  const handleScroll = (direction: "left" | "right") => {
     if (containerRef.current) {
-      const container = containerRef.current;
-      const scrollAmount = container.firstElementChild?.clientWidth || 0;
-      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      const scrollAmount =
+        containerRef.current.firstElementChild?.clientWidth || 0;
+      containerRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
     }
   };
 
-  const handleScrollLeft = () => {
-    if (containerRef.current) {
-      const container = containerRef.current;
-      const scrollAmount = container.firstElementChild?.clientWidth || 0;
-      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    }
-  };
-
-  const updateScrollButtons = () => {
+  const updateScrollState = () => {
     if (containerRef.current) {
       const container = containerRef.current;
       setCanScrollLeft(container.scrollLeft > 0);
@@ -40,16 +36,46 @@ const ServicesSection = (): React.ReactElement => {
   };
 
   useEffect(() => {
-    updateScrollButtons();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const visibleCardIndex = cardRefs.current.indexOf(
+              entry.target as HTMLLIElement,
+            );
+            setCurrentCard(visibleCardIndex);
+          }
+        });
+      },
+      {
+        root: containerRef.current,
+        threshold: 0.5,
+      },
+    );
+
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      cardRefs.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
     const container = containerRef.current;
+    updateScrollState();
+
     if (container) {
-      container.addEventListener("scroll", updateScrollButtons);
-      return () => container.removeEventListener("scroll", updateScrollButtons);
+      container.addEventListener("scroll", updateScrollState);
+      return () => container.removeEventListener("scroll", updateScrollState);
     }
   }, []);
 
   return (
-    <section className="relative flex flex-col gap-20">
+    <section className="relative flex flex-col gap-20 pt-24 mobile:pt-0 mobile:px-5">
       <div className="relative pb-2 w-full">
         <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-mainColor/70 via-mainColor/40 to-mainColor/20"></div>
         <h5 className="font-bold text-mainColor">{t("title")}</h5>
@@ -58,32 +84,31 @@ const ServicesSection = (): React.ReactElement => {
       <div className="relative">
         <ul
           ref={containerRef}
-          className="flex gap-32 overflow-x-auto scrollbar-hide"
+          className="flex gap-32 overflow-x-auto scrollbar-hide "
           style={{
             scrollSnapType: "x mandatory",
             paddingBottom: "10px",
           }}
         >
-          {serviceSections.map((section) => (
+          {serviceSections.map((section, index) => (
             <li
               key={section.id}
-              className="w-96 flex-shrink-0"
-              style={{
-                scrollSnapAlign: "start",
+              ref={(el) => {
+                cardRefs.current[index] = el;
               }}
+              className="w-96 flex-shrink-0 mobile:w-fit "
+              style={{ scrollSnapAlign: "start" }}
             >
-              <article className="flex flex-col gap-10">
+              <article className="flex flex-col gap-10  mobile:pb-10 w-fit">
                 <span className="text-mainColor h-10">{t(section.title)}</span>
                 <span className="text-mss">{t(section.description)}</span>
-                <ul className="list-disc flex flex-col gap-3  h-40">
+                <ul className="list-disc flex flex-col items-center gap-3 h-40">
                   {section.details.map((detail) => (
                     <li
                       key={detail.id}
-                      className="leading-5 text-mss flex  gap-4"
+                      className="leading-5 text-mss flex gap-4"
                     >
-                      <div className="w-1 pt-2">
-                        <FaCircle size={5} />
-                      </div>
+                      <div className="w-1 pt-2">•</div>
                       {t(detail.name)}
                     </li>
                   ))}
@@ -97,22 +122,34 @@ const ServicesSection = (): React.ReactElement => {
             </li>
           ))}
         </ul>
+
         {canScrollLeft && (
           <button
-            onClick={handleScrollLeft}
-            className="absolute top-1/2 -left-40 transform -translate-y-1/2  text-white p-2 rounded-full shadow-md"
+            onClick={() => handleScroll("left")}
+            className="absolute top-1/2 -left-10 transform -translate-y-1/2 text-white p-2 rounded-full shadow-md mobile:hidden"
           >
             <BsChevronLeft color={"#888aff"} size={40} />
           </button>
         )}
         {canScrollRight && (
           <button
-            onClick={handleScrollRight}
-            className="absolute top-1/2 -right-40 transform -translate-y-1/2 text-white p-2 rounded-full shadow-md"
+            onClick={() => handleScroll("right")}
+            className="absolute top-1/2 -right-10 transform -translate-y-1/2 text-white p-2 rounded-full shadow-md mobile:hidden"
           >
             <BsChevronRight color={"#888aff"} size={40} />
           </button>
         )}
+
+        <div className="gap-2 justify-center items-center mt-4 mobile:flex hidden ">
+          {serviceSections.map((_, index) => (
+            <div
+              key={index}
+              className={`w-8 h-2 rounded-3xl ${
+                index === currentCard ? "bg-mainColor" : "bg-mainColor/40"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ const HeroSection = (): React.ReactElement => {
   }, []);
 
   return (
-    <section className="flex mobile:flex-col-reverse mobile:gap-10 items-center justify-between w-full">
+    <section className="flex mobile:flex-col-reverse mobile:gap-10 items-center justify-between w-full mobile:px-5">
       <div className="flex flex-col text-mainColor">
         <span className="text-xxl font-bold">
           {lines[0].slice(0, isWritingFirstLine ? position : lines[0].length)}
