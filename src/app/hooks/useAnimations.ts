@@ -57,7 +57,21 @@ const useAnimations = () => {
     };
   };
 
-  return { screenObserverVertical, screenObserverHorizontal };
+  const showAnimateItems = (
+    isVisible: boolean,
+    setAnimateItems: (value: boolean) => void,
+  ) => {
+    if (isVisible) {
+      const timeout = setTimeout(() => {
+        setAnimateItems(true);
+      }, 200);
+      return () => clearTimeout(timeout);
+    } else {
+      setAnimateItems(false);
+    }
+  };
+
+  return { screenObserverVertical, screenObserverHorizontal, showAnimateItems };
 };
 
 export default useAnimations;

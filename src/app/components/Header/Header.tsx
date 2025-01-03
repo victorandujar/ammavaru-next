@@ -27,7 +27,7 @@ const Header = (): React.ReactElement => {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between p-4 bg-background shadow-md mobile:w-full">
+    <header className="sticky top-0 z-50 flex items-center justify-between p-4 px-8 bg-background shadow-md mobile:w-full">
       <button onClick={handleLogoClick}>
         <Image src="/logo.png" height={20} alt="logo" width={20} />
       </button>

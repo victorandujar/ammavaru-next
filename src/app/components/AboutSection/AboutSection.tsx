@@ -18,7 +18,7 @@ const AboutSection = (): React.ReactElement => {
   }, []);
 
   return (
-    <section className="flex justify-between mobile:flex-col mobile:gap-10 mobile:text-center mobile:px-5">
+    <section className="flex justify-between mobile:flex-col mobile:gap-10 mobile:text-center mobile:px-5 pt-32">
       <div
         className={`w-2/5 transition-all duration-1000 ease-out transform ${
           showFirstText
