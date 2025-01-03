@@ -51,8 +51,11 @@ const SpiralAnimation: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center ">
-      <canvas ref={canvasRef} className="rounded-full" />
+    <div className="relative flex items-center justify-center group w-screen">
+      <canvas
+        ref={canvasRef}
+        className="rounded-full lg:group-hover:hidden w-fit"
+      />
     </div>
   );
 };

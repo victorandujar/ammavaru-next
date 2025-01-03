@@ -70,10 +70,10 @@ const ServicesSection = (): React.ReactElement => {
         <h5 className="font-bold text-mainColor">{t("title")}</h5>
       </div>
 
-      <div className="relative h-[770px] mobile:h-fit">
+      <div className="relative h-[800px] mobile:h-fit">
         <ul
           ref={containerRef}
-          className="flex gap-32 overflow-x-auto scrollbar-hide h-full w-full pb-10"
+          className="flex gap-32 overflow-x-auto scrollbar-hide h-full w-full"
           style={{
             scrollSnapType: "x mandatory",
           }}
@@ -87,8 +87,8 @@ const ServicesSection = (): React.ReactElement => {
               className="w-96 flex-shrink-0 mobile:w-fit group h-full relative"
               style={{ scrollSnapAlign: "start" }}
             >
-              <article className="flex flex-col gap-6 mobile:pb-10 w-96 mobile:w-full p-4 rounded-lg relative group-hover:absolute top-0 left-0 group-hover:z-50 group-hover:shadow-lg group-hover:bg-mainColor">
-                <div className="flex flex-col gap-0 text-mainColor group-hover:text-white">
+              <article className="flex flex-col gap-6 mobile:pb-10 w-96 mobile:w-full p-4 rounded-lg relative lg:group-hover:absolute top-0 left-0 lg:group-hover:z-50 group-hover:shadow-lg lg:group-hover:bg-mainColor">
+                <div className="flex flex-col gap-0 text-mainColor lg:group-hover:text-white">
                   <span className="font-bold">{section.subtitle} |</span>
                   <span>{t(section.title)}</span>
                 </div>
@@ -139,8 +139,8 @@ const ServicesSection = (): React.ReactElement => {
                     </li>
                   ))}
                 </ul>
-                <div className="group-hover:flex w-full justify-end items-end hidden">
-                  <button className="text-ms text-white border-solid border-1 border-white rounded-3xl px-5 py-2 hover:bg-mainColor hover:text-white hover:font-bold">
+                <div className="group-hover:flex w-full justify-end items-end hidden mobile:flex">
+                  <button className="text-ms text-white border-solid border-1 border-white rounded-3xl px-5 py-2 hover:bg-mainColor hover:text-white hover:font-bold mobile:bg-mainColor mobile:font-bold">
                     {t("button-text")}
                   </button>
                 </div>

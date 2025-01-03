@@ -56,9 +56,10 @@ export default {
         custom: "0px 0px 50px 0.1em #888aff",
       },
       screens: {
-        sm: "800px",
+        desktop: { min: "1200px" },
         mobile: { max: "800px" },
       },
+
       // boxShadow: {
       //   "3d": "0 5px 15px rgba(0, 0, 0, 0.2), 0 20px 25px rgba(0, 0, 0, 0.2)", // Sombra 3D
       // },
