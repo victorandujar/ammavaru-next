@@ -20,37 +20,100 @@
   "Services": {
     "title": "Services",
     "first-service": {
-      "title": "Full Stack Development and MVP for Startups",
-      "description": "We design and develop MVPs (Minimum Viable Products) focused on quickly launching to market with the essentials to validate ideas and scale.",
-      "first-detail": "Initial diagnosis to understand key needs.",
-      "second-detail": "Agile development of robust web platforms and apps.",
-      "third-detail": "Evolution of existing solutions (e.g., migrating from WordPress to custom platforms).",
-      "fourth-detail": "Technical maintenance and continuous improvement."
+      "title": "Conceptualization & MVP",
+      "description": "If you are starting with a startup and/or are an entrepreneur wanting to bring your idea to life, this service is for you.",
+      "first-detail": {
+        "highlight": "We discover your potential:",
+        "text": "We deeply research the market and trends to identify unique opportunities for your territory."
+      },
+      "second-detail": {
+        "highlight": "We understand your audience:",
+        "text": "We conduct a detailed analysis of your target audience to understand their needs and behaviors, ensuring your brand connects effectively."
+      },
+      "third-detail": {
+        "highlight": "We design your brand from scratch:",
+        "text": "We define the master plan that guides how your brand connects with its audience to generate value, build trust, and ensure sustainable differentiation over time."
+      },
+      "fourth-detail": {
+        "highlight": "We create your complete identity:",
+        "text": "We deliver a detailed Brand Book with the complete universe of your brand, ensuring everything you communicate is consistent and professional."
+      },
+      "fifth-detail": {
+        "highlight": "We launch your idea to the market:",
+        "text": "We build an MVP with the necessary functionalities to test your product and connect with your users."
+      }
     },
     "second-service": {
-      "title": "Digital Transformation and Strategic Diagnosis",
-      "description": "We integrate innovation into companies with defined products, optimizing their digital presence and adding strategic value.",
-      "first-detail": "Digital diagnosis: identifying areas for improvement.",
-      "second-detail": "Rebranding and visual identity evolution.",
-      "third-detail": "Development of personalized e-commerce and online platforms.",
-      "fourth-detail": "Strategies to showcase product value in a competitive environment.",
-      "fifth-detail": "Technical support and maintenance."
+      "title": "Rebranding and Digital Transformation",
+      "description": "If your company or project is already established but needs to renew its identity and stand out in the digital world, this service is for you.",
+      "first-detail": {
+        "highlight": "We analyze the current state of your brand:",
+        "text": "We identify opportunities to align your purpose and business objectives with market needs and audience expectations."
+      },
+      "second-detail": {
+        "highlight": "We redefine the strategic identity:",
+        "text": "We update the values, mission, tone of voice, and brand experience to ensure everything your business communicates is consistent and memorable."
+      },
+      "third-detail": {
+        "highlight": "We design a coherent visual identity:",
+        "text": "We create visual systems that reinforce your brand’s personality."
+      },
+      "fourth-detail": {
+        "highlight": "We reconnect with your audience:",
+        "text": "We thoroughly study your target audience to ensure your new identity resonates with them."
+      },
+      "fifth-detail": {
+        "highlight": "We modernize your digital platform:",
+        "text": "We develop or redesign your website or app, prioritizing user experience (UX) and search engine optimization (SEO)."
+      },
+      "sixth-detail": {
+        "highlight": "We integrate key tools:",
+        "text": "We add solutions such as e-commerce, CRM, or automation systems to optimize your operations."
+      }
     },
     "third-service": {
-      "title": "Brand Strategy and Identity Creation",
-      "description": "We design authentic brands that connect with their audiences, developing digital strategies that drive their purpose.",
-      "first-detail": "Creation of visual identity and communication strategy.",
-      "second-detail": "Content planning and funnel communication design.",
-      "third-detail": "E-commerce strategy for small businesses.",
-      "fourth-detail": "Design of attractive portfolios for artists and creatives."
+      "title": "Growth and Optimization",
+      "description": "If your business is growing and you need to optimize your tools or expand your reach, this service is for you.",
+      "first-detail": {
+        "highlight": "We identify areas for improvement:",
+        "text": "We conduct a thorough analysis of your current digital tools to detect opportunities for optimization and improvement."
+      },
+      "second-detail": {
+        "highlight": "We redesign your digital presence:",
+        "text": "We modernize your website or platform to make it more efficient, functional, and visually appealing, focusing on user experience (UX) and performance."
+      },
+      "third-detail": {
+        "highlight": "We create tailored solutions:",
+        "text": "We add specific functionalities or digital tools aligned with your business objectives, from integrations to automations."
+      },
+      "fourth-detail": {
+        "highlight": "We expand your reach:",
+        "text": "We design specific strategies to attract new clients and retain existing ones through relevant content, digital campaigns, and personalized marketing strategies."
+      },
+      "fifth-detail": {
+        "highlight": "We provide ongoing support:",
+        "text": "We offer continuous advice on branding and technology to keep you competitive in an ever-changing market."
+      }
     },
     "fourth-service": {
-      "title": "Creative and Methodological Consulting",
-      "description": "We offer strategic consulting to design and execute creative projects, combining agile methodologies with practical tools.",
-      "first-detail": "Creative workshops and knowledge capsules.",
-      "second-detail": "Guides to create projects and optimize internal processes.",
-      "third-detail": "Business Design and Service Design for small and medium-sized companies.",
-      "fourth-detail": "Custom service design according to your needs."
+      "title": "Personal Brand Strategy",
+      "description": "If you are a creative, artist, or professional looking to build an authentic personal brand connected to your purpose, this service is for you.",
+      "first-detail": {
+        "highlight": "We define your strategic essence:",
+        "text": "We identify your values, purpose, and what makes you unique to build a narrative that authentically connects with your audience."
+      },
+      "second-detail": {
+        "highlight": "We create an identity aligned with you:",
+        "text": "We design a visual identity system, integrating all the elements and concepts that connect your personality with your professional goals."
+      },
+      "third-detail": {
+        "highlight": "We design how to communicate your story:",
+        "text": "We develop a clear and effective communication strategy, including your tone of voice, ideal channels, and a plan to connect with your audience."
+      },
+      "fourth-detail": {
+        "highlight": "We build your digital presence:",
+        "text": "Whether it’s a portfolio or landing page, we create a strategic, attractive website that reflects your value and facilitates interaction with your clients or followers."
+      }
     },
     "button-text": "Tell me more"
   },

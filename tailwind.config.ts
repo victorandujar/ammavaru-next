@@ -52,6 +52,9 @@ export default {
           "100%": { transform: "translate(0, 0) scale(1)" },
         },
       },
+      boxShadow: {
+        custom: "0px 0px 50px 0.1em #888aff",
+      },
       screens: {
         sm: "800px",
         mobile: { max: "800px" },
