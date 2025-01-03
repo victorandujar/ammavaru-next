@@ -15,7 +15,16 @@
     "we-do": "Trabajamos con marcas y negocios que buscan hacer del mundo un lugar mejor. Creamos estrategias y productos digitales que amplifican su impacto."
   },
   "Methodology": {
-    "title": "Metodología"
+    "title": "Metodología",
+    "subtitle-first": "Creando con",
+    "subtitle-purpose": "propósito",
+    "subtitle-second": "diseñando con",
+    "subtitle-connection": "conexión",
+    "top-text-left": "En Ammavaroo, creemos en procesos que honran la esencia única de cada proyecto, guiando a nuestros clientes desde el descubrimiento hasta la implementación con un enfoque profundo, estratégico y consciente. Inspirados por el significado de la creación con sentido, nuestra metodología combina exploración, diseño y desarrollo para construir soluciones auténticas y alineadas con los valores y objetivos de cada cliente.",
+    "top-text-right": "Nuestro trabajo se divide en tres fases principales: Discovery, Creation y Development. Cada una está diseñada para garantizar resultados que reflejen propósito y conexión, tanto con las audiencias como con los objetivos estratégicos.",
+    "discovery-text": "En esta fase, investigamos, analizamos y comprendemos la esencia de tu idea o negocio. Nos sumergimos en el contexto de tu proyecto para identificar oportunidades clave y construir una base sólida para el proceso creativo y técnico.",
+    "creation-text": "Aquí convertimos ideas en conceptos tangibles. Diseñamos soluciones que reflejan la esencia de tu marca, asegurando que cada detalle visual, narrativo y estratégico esté alineado con tus objetivos y propósito.",
+    "development-text": "En esta fase, transformamos las estrategias y diseños en soluciones digitales funcionales. Nos aseguramos de que todo esté optimizado para ofrecer resultados concretos y sostenibles."
   },
 
   "Services": {
