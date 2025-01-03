@@ -84,10 +84,10 @@ const MethodologySection = (): React.ReactElement => {
         >
           <div className="mobile:w-screen absolute w-full h-full bg-gradient-to-r from-tertiary via-tertiary to-tertiary rounded-full blur-[50px] opacity-50"></div>
           <FluidMesh />
-          <span className="absolute z-10 tracking-widest text-l group-hover:hidden">
+          <span className="absolute z-10 tracking-widest text-l lg:group-hover:hidden">
             DISCOVERY
           </span>
-          <p className="text-ms opacity-0 group-hover:opacity-100 absolute left-0 mx-auto text-center text-white font-light p-4 rounded-lg transform translate-y-10 group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
+          <p className="text-ms opacity-0 lg:group-hover:opacity-100 absolute left-0 mx-auto text-center text-white font-light p-4 rounded-lg transform translate-y-10 lg:group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
             {t("discovery-text")}
           </p>
         </div>
@@ -98,13 +98,13 @@ const MethodologySection = (): React.ReactElement => {
           style={{ transitionDelay: "300ms" }}
         >
           <div className="absolute w-full h-full bg-gradient-to-r from-mainColor via-mainColor to-mainColor rounded-full blur-[50px] opacity-50 animate-smoke"></div>
-          <div className="group-hover:hidden w-full h-full flex justify-center items-center">
+          <div className="lg:group-hover:hidden w-full h-full flex justify-center items-center">
             <SpiralAnimation />
           </div>
-          <span className="absolute z-10 tracking-widest text-l group-hover:hidden">
+          <span className="absolute z-10 tracking-widest text-l lg:group-hover:hidden">
             CREATION
           </span>
-          <p className="w-full h-full text-ms opacity-0 group-hover:opacity-100 absolute left-0 mx-auto text-center text-white font-light p-4 rounded-lg transform translate-y-10 group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
+          <p className="w-full h-full text-ms opacity-0 lg:group-hover:opacity-100 absolute left-0 mx-auto text-center text-white font-light p-4 rounded-lg transform translate-y-10 lg:group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
             {t("creation-text")}
           </p>
         </div>
@@ -114,16 +114,16 @@ const MethodologySection = (): React.ReactElement => {
           }`}
         >
           <div className="absolute w-full h-full bg-gradient-to-r from-primary via-primary to-primary rounded-full blur-[50px] opacity-50 "></div>
-          <div className="group-hover:hidden w-96">
+          <div className="lg:group-hover:hidden w-96">
             <LinesAnimation />
           </div>
-          <span className="absolute z-10 tracking-widest text-l group-hover:hidden">
+          <span className="absolute z-10 tracking-widest text-l lg:group-hover:hidden">
             DEVELOPMENT
           </span>
-          <div className="group-hover:hidden w-96">
+          <div className="lg:group-hover:hidden w-96">
             <LinesAnimation />
           </div>
-          <p className="text-ms opacity-0 group-hover:opacity-100 absolute left-0  text-center text-white font-light p-4 rounded-lg transform translate-y-10 group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
+          <p className="text-ms opacity-0 lg:group-hover:opacity-100 absolute left-0  text-center text-white font-light p-4 rounded-lg transform translate-y-10 lg:group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
             {t("development-text")}
           </p>
         </div>

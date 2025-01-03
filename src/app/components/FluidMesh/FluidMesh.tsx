@@ -84,7 +84,7 @@ const FluidMesh: React.FC = () => {
     <div className="relative w-screen h-80 overflow-hidden mobile:w-full mobile:overflow-hidden mobile:h-full rounded-full group">
       <canvas
         ref={canvasRef}
-        className="absolute top-0 left-0 w-fit group-hover:hidden"
+        className="absolute top-0 left-0 w-fit lg:group-hover:hidden"
       />
     </div>
   );
