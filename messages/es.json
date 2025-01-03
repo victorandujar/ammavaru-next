@@ -21,36 +21,100 @@
   "Services": {
     "title": "Servicios",
     "first-service": {
-      "title": "Desarrollo Full Stack y MVP para Startups",
-      "description": "Diseñamos y desarrollamos MVPs (Productos Mínimos Viables) enfocados en lanzar al mercado rápidamente con lo esencial para validar ideas y escalar.",
-      "first-detail": "Diagnóstico inicial para comprender las necesidades clave.",
-      "second-detail": "Desarrollo ágil de plataformas web y apps robustas.",
-      "third-detail": "Evolución de soluciones existentes (por ejemplo, migración de WordPress a plataformas personalizadas).",
-      "fourth-detail": "Mantenimiento técnico y mejora continua."
+      "title": "Conceptualización & MVP",
+      "description": "Si estás comenzando con una startup y/o eres emprendedor y quieres darle vida a tu idea, este servicio es para ti.",
+      "first-detail": {
+        "highlight": "Descubrimos tu potencial:",
+        "text": "Investigamos a fondo el mercado y las tendencias para identificar oportunidades únicas para tu territorio."
+      },
+      "second-detail": {
+        "highlight": "Conocemos a tu audiencia:",
+        "text": "Realizamos un análisis detallado del público objetivo para entender sus necesidades y comportamientos, asegurándonos de que tu marca conecte de manera efectiva."
+      },
+      "third-detail": {
+        "highlight": "Diseñamos tu marca desde cero:",
+        "text": "Definimos el plan maestro, que guía cómo tu marca conecta con su audiencia para generar valor, confianza y que su diferenciación sea sostenible en el tiempo."
+      },
+      "fourth-detail": {
+        "highlight": "Creamos tu identidad completa:",
+        "text": "Te entregamos un Brand Book detallado con el universo completo de tu marca, para que todo lo que comuniques sea consistente y profesional."
+      },
+      "fifth-detail": {
+        "highlight": "Lanzamos tu idea al mercado:",
+        "text": "Construimos un MVP con las funcionalidades necesarias para probar tu producto y conectarte con tus usuarios."
+      }
     },
     "second-service": {
-      "title": "Transformación Digital y Diagnóstico Estratégico",
-      "description": "Integramos innovación en empresas con productos definidos, optimizando su presencia digital y añadiendo valor estratégico.",
-      "first-detail": "Diagnóstico digital: identificación de oportunidades de mejora.",
-      "second-detail": "Rebranding y evolución de identidad visual.",
-      "third-detail": "Desarrollo de e-commerce y plataformas online personalizadas.",
-      "fourth-detail": "Estrategias para mostrar el valor del producto en un entorno competitivo."
+      "title": "Rebranding y Transformación Digital",
+      "description": "Si tu empresa o proyecto ya está establecido pero necesita renovar su identidad y destacar en el mundo digital, este servicio es para ti.",
+      "first-detail": {
+        "highlight": "Analizamos el estado actual de tu marca:",
+        "text": "Identificamos oportunidades para alinear tu propósito y objetivo de negocio con las necesidades del mercado y las expectativas de tu audiencia."
+      },
+      "second-detail": {
+        "highlight": "Redefinimos la identidad estratégica:",
+        "text": "Actualizamos los valores, misión, tono de voz y experiencia de marca para que todo lo que comunique tu negocio sea consistente y memorable."
+      },
+      "third-detail": {
+        "highlight": "Diseñamos una identidad visual coherente:",
+        "text": "Creamos sistemas visuales que refuercen la personalidad de tu marca."
+      },
+      "fourth-detail": {
+        "highlight": "Reconectamos con tu audiencia:",
+        "text": "Estudiamos a fondo a tu público objetivo para asegurarnos de que tu nueva identidad resuene con ellos."
+      },
+      "fifth-detail": {
+        "highlight": "Modernizamos tu plataforma digital:",
+        "text": "Desarrollamos o rediseñamos tu sitio web o app, priorizando la experiencia del usuario (UX) y la optimización para buscadores (SEO)."
+      },
+      "sixth-detail": {
+        "highlight": "Integramos herramientas clave:",
+        "text": "Añadimos soluciones como e-commerce, CRM o sistemas de automatización para optimizar tus operaciones."
+      }
     },
     "third-service": {
-      "title": "Estrategia de Marca y Creación de Identidad",
-      "description": "Diseñamos marcas auténticas que conectan con sus audiencias, desarrollando estrategias digitales que impulsan su propósito.",
-      "first-detail": "Creación de identidad visual y estrategia de comunicación.",
-      "second-detail": "Planeación de contenido y diseño de funnels de comunicación.",
-      "third-detail": "Estrategia de e-commerce para pequeños negocios.",
-      "fourth-detail": "Diseño de portafolios atractivos para artistas y creativos."
+      "title": "Crecimiento y Optimización",
+      "description": "Si tu negocio está creciendo y necesitas optimizar tus herramientas o expandir tu alcance, este servicio es para ti.",
+      "first-detail": {
+        "highlight": "Identificamos áreas de mejora:",
+        "text": "Realizamos un análisis exhaustivo de tus herramientas digitales actuales para detectar oportunidades de optimización y mejora."
+      },
+      "second-detail": {
+        "highlight": "Rediseñamos tu presencia digital:",
+        "text": "Modernizamos tu sitio web o plataforma para que sea más eficiente, funcional y visualmente atractiva, con un enfoque en la experiencia del usuario (UX) y el rendimiento."
+      },
+      "third-detail": {
+        "highlight": "Creamos soluciones personalizadas:",
+        "text": "Añadimos funcionalidades específicas o herramientas digitales que se alineen con tus objetivos de negocio, desde integraciones hasta automatizaciones."
+      },
+      "fourth-detail": {
+        "highlight": "Aumentamos tu alcance:",
+        "text": "Diseñamos estrategias específicas para atraer nuevos clientes y fidelizar a los existentes mediante contenido relevante, campañas digitales y estrategias de marketing personalizadas."
+      },
+      "fifth-detail": {
+        "highlight": "Te acompañamos continuamente:",
+        "text": "Ofrecemos asesoramiento continuo en branding y tecnología para mantenerte competitivo en un mercado en constante cambio."
+      }
     },
     "fourth-service": {
-      "title": "Consultoría Creativa y Metodológica",
-      "description": "Ofrecemos consultoría estratégica para diseñar y ejecutar proyectos creativos, combinando metodologías ágiles con herramientas prácticas.",
-      "first-detail": "Workshops creativos y cápsulas de conocimiento.",
-      "second-detail": "Guías para crear proyectos y optimizar procesos internos.",
-      "third-detail": "Business Design y Service Design para empresas pequeñas y medianas.",
-      "fourth-detail": "Diseño de servicios personalizados según tus necesidades."
+      "title": "Estrategia de marca personal",
+      "description": "Si eres un creativo, artista o profesional que busca construir una marca personal auténtica y conectada con su propósito, este servicio es para ti.",
+      "first-detail": {
+        "highlight": "Definimos tu esencia estratégica:",
+        "text": "Identificamos tus valores, propósito y lo que te hace único, para construir una narrativa que conecte con tu audiencia de manera auténtica."
+      },
+      "second-detail": {
+        "highlight": "Creamos una identidad alineada contigo:",
+        "text": "Diseñamos un sistema de identidad visual, integrando todos los elementos y conceptos que conecten tu personalidad con tu objetivo profesional."
+      },
+      "third-detail": {
+        "highlight": "Diseñamos cómo comunicar tu historia:",
+        "text": "Desarrollamos una estrategia de comunicación clara y efectiva, que incluya tu tono de voz, canales ideales y un plan para conectar con tu audiencia."
+      },
+      "fourth-detail": {
+        "highlight": "Construimos tu presencia digital:",
+        "text": "Ya sea un portafolio o landing, creamos un sitio web estratégico, atractivo, que refleje tu valor y facilite la interacción con tus clientes o seguidores."
+      }
     },
     "button-text": "Quiero saber más"
   },
