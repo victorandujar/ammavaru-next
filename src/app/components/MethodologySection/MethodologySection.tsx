@@ -98,9 +98,7 @@ const MethodologySection = (): React.ReactElement => {
           style={{ transitionDelay: "300ms" }}
         >
           <div className="absolute w-full h-full bg-gradient-to-r from-mainColor via-mainColor to-mainColor rounded-full blur-[50px] opacity-50 animate-smoke"></div>
-          <div className="lg:group-hover:hidden w-full h-full flex justify-center items-center">
-            <SpiralAnimation />
-          </div>
+          <SpiralAnimation />
           <span className="absolute z-10 tracking-widest text-l lg:group-hover:hidden">
             CREATION
           </span>
@@ -114,15 +112,11 @@ const MethodologySection = (): React.ReactElement => {
           }`}
         >
           <div className="absolute w-full h-full bg-gradient-to-r from-primary via-primary to-primary rounded-full blur-[50px] opacity-50 "></div>
-          <div className="lg:group-hover:hidden w-96">
-            <LinesAnimation />
-          </div>
+          <LinesAnimation />
           <span className="absolute z-10 tracking-widest text-l lg:group-hover:hidden">
             DEVELOPMENT
           </span>
-          <div className="lg:group-hover:hidden w-96">
-            <LinesAnimation />
-          </div>
+          <LinesAnimation />
           <p className="text-ms opacity-0 lg:group-hover:opacity-100 absolute left-0  text-center text-white font-light p-4 rounded-lg transform translate-y-10 lg:group-hover:translate-y-0 transition-all duration-1000 ease-in-out tracking-wider">
             {t("development-text")}
           </p>
