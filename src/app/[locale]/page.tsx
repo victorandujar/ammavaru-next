@@ -10,13 +10,13 @@ const Home = (): React.ReactElement => {
   const { sectionRefs } = useScrollContext();
 
   return (
-    <div className="flex w-3/4 flex-col gap-40 mobile:w-screen mobile:gap-24 ">
+    <div className="flex w-3/4 flex-col mobile:w-screen mobile:gap-24 ">
       <HeroSection />
       <AboutSection />
       <div ref={sectionRefs.method}>
         <MethodologySection />
       </div>
-      <div ref={sectionRefs.services}>
+      <div ref={sectionRefs.services} className="h-fit">
         <ServicesSection />
       </div>
       <div ref={sectionRefs.contact}>
