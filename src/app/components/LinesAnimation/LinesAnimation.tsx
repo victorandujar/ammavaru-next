@@ -77,12 +77,13 @@ const LinesAnimation: React.FC<DNAAnimationProps> = ({
   }, [width, height, strandHeight, strandSpeed]);
 
   return (
-    <div className="relative flex items-center justify-center mobile:w-fit">
+    <div className="relative flex items-center justify-center mobile:w-fit group w-96">
       <canvas
         ref={canvasRef}
         width={width}
         height={height}
         style={{ backgroundColor: "transparent" }}
+        className="lg:group-hover:hidden w-fit"
       />
     </div>
   );
