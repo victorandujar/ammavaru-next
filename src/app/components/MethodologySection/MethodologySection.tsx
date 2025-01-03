@@ -20,7 +20,7 @@ const MethodologySection = (): React.ReactElement => {
 
   return (
     <section
-      className={`pt-32 flex flex-col gap-24 mobile:overflow-hidden mobile:h-[1200px] transition-all duration-1000 ease-out transform ${
+      className={`pt-32 flex flex-col gap-24 mobile:overflow-hidden mobile:h-[1400px] transition-all duration-1000 ease-out transform ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
       }`}
       ref={sectionRef}

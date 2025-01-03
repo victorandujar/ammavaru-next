@@ -119,7 +119,7 @@ export const serviceSections: ServiceInterface[] = [
       {
         id: 4.2,
         highlight: "fourth-service.second-detail.highlight",
-        text: "fourth-service.secondh-detail.text",
+        text: "fourth-service.second-detail.text",
       },
       {
         id: 4.3,
