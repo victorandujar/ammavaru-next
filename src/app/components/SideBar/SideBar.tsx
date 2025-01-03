@@ -8,6 +8,7 @@ import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import { useScrollContext } from "@/app/contexts/ScrollContext";
+import useAnimations from "@/app/hooks/useAnimations";
 
 interface Props {
   isVisible: boolean;
@@ -18,6 +19,7 @@ const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
   const t = useTranslations("Header");
   const path = usePathname();
   const { scrollToSection } = useScrollContext();
+  const { showAnimateItems } = useAnimations();
 
   const [animateItems, setAnimateItems] = useState(false);
 
@@ -27,15 +29,8 @@ const SideBar = ({ isVisible, handleMenuOpen }: Props): React.ReactElement => {
   };
 
   useEffect(() => {
-    if (isVisible) {
-      const timeout = setTimeout(() => {
-        setAnimateItems(true);
-      }, 200);
-      return () => clearTimeout(timeout);
-    } else {
-      setAnimateItems(false);
-    }
-  }, [isVisible]);
+    showAnimateItems(isVisible, setAnimateItems);
+  }, [isVisible, showAnimateItems]);
 
   return (
     <div

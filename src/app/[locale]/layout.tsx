@@ -29,7 +29,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className}  antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Layout>{children}</Layout>
         </NextIntlClientProvider>

@@ -70,10 +70,10 @@ const ServicesSection = (): React.ReactElement => {
         <h5 className="font-bold text-mainColor">{t("title")}</h5>
       </div>
 
-      <div className="relative h-[770px] mobile:h-fit">
+      <div className="relative h-[800px] mobile:h-fit">
         <ul
           ref={containerRef}
-          className="flex gap-32 overflow-x-auto scrollbar-hide h-full w-full pb-10"
+          className="flex gap-32 overflow-x-auto scrollbar-hide h-full w-full"
           style={{
             scrollSnapType: "x mandatory",
           }}
